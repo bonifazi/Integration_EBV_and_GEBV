@@ -229,7 +229,7 @@ compute_ERC_and_DRP <- function(data, method_ERC, method_DRP, sigma2_a = NA, sig
       select(aid, rel) %>% # select animal REL
       compute_ERC(data = ., lambda_method = method_ERC, h2 = h2) # compute ERC
   }
-  #compute_ERC(data = ., lambda_method = method_ERC,
+
   # 4) Compute ERC_PA (ERC from PA_REL) --------------------------------------------------
   if (method_ERC == "RatioVariances") {
     PA_ERC <- data_2 %>%
