@@ -227,9 +227,9 @@ compute_ERC_and_DRP <- function(data, method_ERC, method_DRP, sigma2_a = NA, sig
   } else if (method_ERC == "h2") {
     animal_ERC <- data_2 %>%
       select(aid, rel) %>% # select animal REL
-      compute_ERC_h2(data = ., h2 = h2) # compute ERC
+      compute_ERC(data = ., lambda_method = method_ERC, h2 = h2) # compute ERC
   }
-  
+  #compute_ERC(data = ., lambda_method = method_ERC,
   # 4) Compute ERC_PA (ERC from PA_REL) --------------------------------------------------
   if (method_ERC == "RatioVariances") {
     PA_ERC <- data_2 %>%
@@ -240,7 +240,7 @@ compute_ERC_and_DRP <- function(data, method_ERC, method_DRP, sigma2_a = NA, sig
   } else if (method_ERC == "h2") {
     PA_ERC <- data_2 %>%
       select(aid, pa_rel) %>% # select parent average REL
-      compute_ERC_h2(data = ., h2 = h2) %>% # compute ERC_PA
+      compute_ERC(data = ., lambda_method = method_ERC, h2 = h2) %>% # compute ERC_PA
       rename(ERC_PA = ERC)
   }
   
