@@ -46,7 +46,7 @@ For questions or support, please contact renzo.bonifazi@wur.nl or renzo.bonifazi
 ### Schematic overview of the integration procedure
 <div style="text-align:center">
   <p align="center">
-    <img src="https://github.com/bonifazi/Integration_EBV_and_GEBV/assets/74569672/d9bf25b7-8d2e-4b89-877d-c26979f97433" alt="Schematic overview of the integration procedure" width="70%">
+    <img src="https://github.com/bonifazi/Integration_EBV_and_GEBV/assets/74569672/d9bf25b7-8d2e-4b89-877d-c26979f97433" alt="Schematic overview of the integration procedure">
   </p>
    <p align="center">
     Figure 1: Schematic overview of the procedure for the integration of international (G)EBVs at the national level.<sup>1</sup>
